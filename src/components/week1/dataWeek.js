@@ -1,5 +1,9 @@
 
-export const contenido_semana1 = [
+export const contenido_semana1 = {
+    semana:1,
+    horas:2.5,
+    fecha_actualizacion:'28/11/2022',
+    videos:[
     {
         titulo:'instalacion',
         ruta:'instalacion',
@@ -58,4 +62,4 @@ export const contenido_semana1 = [
         ]
     }
 ]
-
+}

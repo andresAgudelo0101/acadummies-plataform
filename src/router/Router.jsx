@@ -3,8 +3,9 @@ import Index from "../pages/Index";
 import { contenido_semana1 } from "../components/week1/dataWeek";
 import RouterAuth from "./RouterAuth";
 import LoginAuth from "./LoginAuth";
-import Test from "../components/week1/Test";
-import Week1Home from "../pages/Week1Home";
+import Layout from "../components/Layout";
+import Video from "../components/Video";
+import Home from "../components/Home";
 
 function Router() {
   return (
@@ -18,21 +19,36 @@ function Router() {
             </LoginAuth>
           }
         />
-
+        <Route path="*" element={<h1>not found</h1>}/>
         <Route path="/semana/1/">
-          <Route path="" element={<RouterAuth><Week1Home/></RouterAuth>}/>
-          <Route path="*" element={<h1>not found</h1>}/>
-          {contenido_semana1.map((val) => (
+          <Route
+            path=""
+            element={
+              <Layout data={contenido_semana1}>
+                <Home info={contenido_semana1} />
+              </Layout>
+            }/>
+            <Route path="instalacion" element={ <Layout data={contenido_semana1}><h1>nota foun123d</h1></Layout>}/>
+            <Route path="estructura" element={<Layout data={contenido_semana1}><h1>no123123ta found</h1></Layout>}/>
+
+
+          {/*contenido_semana1.videos.map((val) => (
             <Route
               path={val.ruta}
               element={
                 <RouterAuth>
-                  <Test titulo={val.titulo} contenido={val.contenido} url={val.url_video}/>
+                  <Layout data={contenido_semana1}>
+                    <Video
+                      titulo={val.titulo}
+                      contenido={val.contenido}
+                      url={val.url_video}
+                    />
+                  </Layout>
                 </RouterAuth>
               }
               key={val.titulo}
             />
-          ))}
+            ))*/}
         </Route>
       </Routes>
     </BrowserRouter>
