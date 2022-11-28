@@ -1,12 +1,8 @@
-import Estructura from "../../components/week1/Estructura";
-import Instalacion from "../../components/week1/Instalacion";
-import PrimerosPasos from "../../components/week1/PrimerosPasos";
 
 export const contenido_semana1 = [
     {
         titulo:'instalacion',
         ruta:'instalacion',
-        componente:Instalacion,
         url_video:'link.mp4',
         contenido:[
             {
@@ -25,7 +21,6 @@ export const contenido_semana1 = [
     {
         titulo:'primeros pasos html',
         ruta:'primeros-pasos-html',
-        componente:PrimerosPasos,
         url_video:'ad.mp4',
         contenido:[
             {
@@ -41,12 +36,23 @@ export const contenido_semana1 = [
     {
         titulo:'estructura basica',
         ruta:'estructura',
-        componente:Estructura,
         url_video:'videito.mp4',
         contenido:[
             {
-                comentario:'',
+                comentario:'es importante leer',
                 url:'w3schol'
+            },
+
+        ]
+    },
+    {
+        titulo:'etiquetas html',
+        ruta:'etiquetas',
+        url_video:'etiquetame_esta.mp4',
+        contenido:[
+            {
+                comentario:'morcilla firefox te ayudara en esto',
+                url:'https://developer.mozilla.org/es/docs/Web/HTML'
             },
 
         ]

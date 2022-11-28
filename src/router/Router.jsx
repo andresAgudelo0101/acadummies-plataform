@@ -1,8 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "../pages/Index";
-import { contenido_semana1 } from "./week1/dataWeek";
+import { contenido_semana1 } from "../components/week1/dataWeek";
 import RouterAuth from "./RouterAuth";
 import LoginAuth from "./LoginAuth";
+import Test from "../components/week1/Test";
+import Week1Home from "../pages/Week1Home";
 
 function Router() {
   return (
@@ -18,14 +20,14 @@ function Router() {
         />
 
         <Route path="/semana/1/">
-          <Route path="" element={<RouterAuth><h1>home</h1></RouterAuth>}/>
+          <Route path="" element={<RouterAuth><Week1Home/></RouterAuth>}/>
           <Route path="*" element={<h1>not found</h1>}/>
           {contenido_semana1.map((val) => (
             <Route
               path={val.ruta}
               element={
                 <RouterAuth>
-                  <val.componente />
+                  <Test titulo={val.titulo} contenido={val.contenido} url={val.url_video}/>
                 </RouterAuth>
               }
               key={val.titulo}
