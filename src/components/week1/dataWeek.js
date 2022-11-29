@@ -1,5 +1,5 @@
 
-export const contenido_semana1 = {
+export const week1 = {
     semana:1,
     horas:2.5,
     fecha_actualizacion:'28/11/2022',

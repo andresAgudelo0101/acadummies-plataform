@@ -21,7 +21,12 @@ function Menu(props) {
                 to={val.ruta}
                 className="text-xl font-light leading-normal tracking-tight text-slate-400 font-sans  hover:text-white"
               >
-                <p className="w-5/6 truncate">{val.titulo}</p>
+                <div className="flex flex-row gap-2 justify-center items-center">
+                  <span className="bg-white rounded-[50%] w-5 h-5 text-black text-base font-semibold flex justify-center items-center p-3">
+                    {key + 1}
+                  </span>
+                  <p className="w-5/6 truncate">{val.titulo}</p>
+                </div>
               </Link>
             </ul>
           ))}
