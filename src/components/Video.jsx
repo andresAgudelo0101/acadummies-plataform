@@ -5,7 +5,7 @@ function Video(props) {
       <h1 className={styles.title2}>{props.titulo}</h1>
       <div className="w-full h-full  flex flex-col gap-3 items-center">
         <video
-          className="w-11/12 h-96 bg-zinc-900"
+          className="w-11/12 md:w-3/4 h-auto  bg-zinc-900"
           controls
           data-state="hidden"
         >
@@ -14,7 +14,7 @@ function Video(props) {
           Your browser does not support the video tag.
         </video>
         <div className="w-full">
-          <h2 className={styles.title3}>Contenido de la clase.</h2>
+          <h2 className={`${styles.title3} ${styles.span1}`}>Contenido de la clase.</h2>
         </div>
 
         <div className=" w-full h-64 overflow-auto">

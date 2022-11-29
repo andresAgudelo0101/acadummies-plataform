@@ -43,7 +43,7 @@ function Header() {
             <Link
               key={key}
               to={week.ruta}
-              className="text-base font-light leading-normal tracking-tight text-slate-400 font-sans  hover:text-white"
+              className="text-base font-light leading-normal tracking-tight text-slate-400 font-sans  hover:text-cyan-400"
             >
               Semana {week.semana}
             </Link>

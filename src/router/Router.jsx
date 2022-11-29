@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Video from "../components/Video";
 import Home from "../components/Home";
 import { week2 } from "../components/week2/dataWeek2";
+import Footer from "../components/Footer";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
           element={
             <LoginAuth>
               <Index />
+              <Footer/>
             </LoginAuth>
           }
         />
