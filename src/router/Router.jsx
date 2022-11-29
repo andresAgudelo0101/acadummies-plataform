@@ -28,11 +28,7 @@ function Router() {
                 <Home info={contenido_semana1} />
               </Layout>
             }/>
-            <Route path="instalacion" element={ <Layout data={contenido_semana1}><h1>nota foun123d</h1></Layout>}/>
-            <Route path="estructura" element={<Layout data={contenido_semana1}><h1>no123123ta found</h1></Layout>}/>
-
-
-          {/*contenido_semana1.videos.map((val) => (
+          {contenido_semana1.videos.map((val) => (
             <Route
               path={val.ruta}
               element={
@@ -48,7 +44,7 @@ function Router() {
               }
               key={val.titulo}
             />
-            ))*/}
+            ))}
         </Route>
       </Routes>
     </BrowserRouter>

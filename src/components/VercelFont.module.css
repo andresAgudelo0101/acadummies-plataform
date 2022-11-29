@@ -1,0 +1,53 @@
+.title {
+    font-family: system-ui;
+    text-align: left;
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    background: rgb(46, 42, 115);
+    background: linear-gradient(
+      90deg,
+      rgba(46, 42, 115, 1) 1%,
+      rgba(74, 232, 233, 1) 29%,
+      #00d4ff 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+  }
+  
+
+  .title2 {
+    font-family: system-ui;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(242, 74, 222, 1) 0%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title3{
+    font-family: system-ui;
+    text-align: left;
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    background: rgb(46, 42, 115);
+  background: linear-gradient(
+    90deg,
+    rgba(46, 42, 115, 1) 0%,
+    rgba(249, 203, 40, 1) 0%,
+    rgba(242, 74, 222, 1) 79%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

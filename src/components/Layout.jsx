@@ -6,9 +6,9 @@ function Layout({ children, data }) {
   return (
     <div>
       <Header />
-      <main className=" flex w-full h-auto ">
+      <main className=" flex flex-col md:flex-row w-full h-auto ">
         <Menu contenido={data} />
-        <section className=" w-full">{children}</section>
+        <section className=" w-full h-auto bg-black ">{children}</section>
       </main>
       <Footer />
     </div>
