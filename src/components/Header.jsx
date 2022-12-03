@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function Header() {
   const [display, setdisplay] = useState(false);
+  const navigate = useNavigate();
   const weeks = [
     { semana: 1, ruta: "/semana/1/" },
     { semana: 2, ruta: "/semana/2/" },
