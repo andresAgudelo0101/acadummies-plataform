@@ -3,6 +3,7 @@ import Header from "./Header";
 import Menu from "./Menu";
 
 function Layout({ children, data }) {
+ 
   return (
     <div>
       <Header />

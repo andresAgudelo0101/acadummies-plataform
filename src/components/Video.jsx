@@ -1,9 +1,12 @@
 import styles from "./VercelFont.module.css";
+import { useEffect } from "react";
+
 function Video(props) {
   return (
     <div className="bg-black w-full h-auto text-white flex flex-col items-center p-8">
       <h1 className={styles.title2}>{props.titulo}</h1>
       <div className="w-full h-full  flex flex-col gap-3 items-center">
+        {/*
         <video
           className="w-11/12 md:w-3/4 h-auto  bg-zinc-900"
           controls
@@ -13,8 +16,19 @@ function Video(props) {
           <source src={props.url} type="video/ogg" />
           Your browser does not support the video tag.
         </video>
+  */}
+        <iframe
+          style={{ width: "100%", height: "500px" }}
+          src={props.url}
+          title={props.titulo}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
         <div className="w-full">
-          <h2 className={`${styles.title3} ${styles.span1}`}>Contenido de la clase.</h2>
+          <h2 className={`${styles.title3} ${styles.span1}`}>
+            Contenido de la clase.
+          </h2>
         </div>
 
         <div className=" w-full h-64 overflow-auto">
